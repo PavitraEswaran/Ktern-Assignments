@@ -7,6 +7,7 @@ console.log(message);
 
 const number = 10; // const variable
 
+
 // Datatype
 
 let var1 = 100;
@@ -18,6 +19,7 @@ console.log(`Type of ${var1} is ${typeof var1}`); // number
 console.log(`Type of ${var2} is ${typeof var2}`); // string
 console.log(`Type of ${var3} is ${typeof var3}`); // boolean
 console.log(`Type is ${typeof var4}`); // object
+
 
 // if-else
 
@@ -31,6 +33,7 @@ if (var1 < 200) {
 } else {
   console.log(`The value ${var1} is greater than 200`);
 }
+
 
 // Switch case
 
@@ -64,6 +67,7 @@ switch (operator) {
     console.log("No operation performed");
 }
 
+
 // While loop
 
 /* Loop executes as long as the condition is true */
@@ -75,6 +79,7 @@ while (counter <= 5) {
   counter++;
 }
 
+
 // For loop
 
 /* Loops through a block of code a number of times */
@@ -82,6 +87,7 @@ while (counter <= 5) {
 for (let i = 2; i <= 5; i++) {
   console.log("The value of i is: ", i);
 }
+
 
 // Looping through dictionaries
 
@@ -97,19 +103,6 @@ for (let key in person) {
 
 console.log("The name of the person is ", personName);
 
-// For of loop
-
-/* This statement loops through the values of an iterable object. */
-const employee_details = {
-  name: "Manoj",
-  id: 1213,
-  experience: 5,
-  designation: "Team Lead",
-};
-
-for (let key in employee_details) {
-  console.log(employee_details[key]);
-}
 
 // Function
 
@@ -145,6 +138,7 @@ if (prime(numberToBeChecked)) {
 } else {
   console.log(`The number ${numberToBeChecked} is not a prime`);
 }
+
 
 // Async and Await functions
 
