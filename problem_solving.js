@@ -6,7 +6,13 @@ let object = {
   duration: 8, //Number
   plannedFrom: "2024-01-04T06:03:34.915+00:00", //Date
   plannedTo: "2024-01-04T06:03:34.915+00:00", //Date
-  stakeholders: ["personA", "personB", "personC"], //Array
+  stakeholders: {
+    //Object
+    workItem: "Task", //String
+    status: "Approved", //String
+    category: "Completed", // String
+    mailTrigger: true, // Boolean,
+  }, //Array
   status: {
     //Object
     workItem: "Task", //String
@@ -124,6 +130,21 @@ const is_status_object = (value, _) => {
 };
 
 /**
+ * Check whether given input is array
+ * @param {any} value Input value to check
+ * @param {string} key Field key to use for message
+ * @returns {boolean} boolean mentioning whether given input is array
+ */
+const is_array = (value, key) => {
+  const res = Array.isArray(value);
+  if (!res)
+    console.log(
+      `Error: ${key} should be of datatype Array but it was ${typeof value} `
+    );
+  return res;
+};
+
+/**
  * This dictionary is used as reference template to match against input object.
  * dictionary has a format of
  *  key - field name
@@ -135,7 +156,7 @@ const expected_object = {
   duration: is_number,
   plannedFrom: is_date,
   plannedTo: is_date,
-  stakeholders: Array.isArray,
+  stakeholders: is_array,
   status: is_status_object,
   active: is_boolean,
 };
