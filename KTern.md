@@ -51,7 +51,7 @@ Automated business and management consulting can be done using Digital Mines.
 
 It helps in the process of planning, managing and delivering software releases to the SAP environment from testing to deployment.
 
-Ktern helps SAP projects
+## Ktern helps SAP projects
 
 - Ktern provides a range of services and solutions that use machine learning and artificial intelligence to help businesses optimise their use of SAP systems.
 - Ktern can help businesses predict when maintenance is needed on SAP systems.
